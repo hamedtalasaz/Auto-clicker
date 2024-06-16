@@ -13,8 +13,7 @@ This Auto Clicker is an automation tool designed to simulate mouse clicks at pre
     It’s designed to be lightweight and efficient, ensuring minimal system resource usage while
     delivering consistent performance.
 
-### Perfect for gamers, developers, or anyone in need of a reliable auto clicker
-### this app is open-source and ready for community contributions.
+### Perfect for gamers, developers, or anyone in need of a reliable auto clicker , this app is open-source and ready for community contributions.
 
 
 
