@@ -8,8 +8,8 @@ import tkinter as tk
 def auto_clicker():
     message.config(text="")
     try :
-        click_count = int(click_count_entry.get())
-        click_speed_get = float(speed_entry.get())
+        click_count = int(click_counter_entry.get())
+        click_speed = float(speed_entry.get())
         position_x_random_a_get =int(position_x_random_a.get())
         position_x_random_b_get =int(position_x_random_b.get())
         position_y_random_a_get =int(position_y_random_a.get())
@@ -23,7 +23,7 @@ def auto_clicker():
             else :    
                 clicked_counter_label.config(text='Clicked {} times !!!'.format(int(_) + 1))
             
-            time.sleep(click_speed_get)
+            time.sleep(click_speed)
             if keyboard.is_pressed('q') :
                 clicked_counter_label.config(text='Clicked {} times !!!\nStopped'.format(int(_) + 1))
                 break
@@ -97,13 +97,13 @@ speed_entry.grid(row=1,column=0,pady=5)
 speed_detail = tk.Label(speed_frame,text='Speed in milisecond')
 speed_detail.grid(row=0,column=0)
 
-click_count_frame = tk.Frame(root,borderwidth=1,relief='solid')
-click_count_frame.grid(row=4,column=0,pady=2,padx=20,sticky='w')
-click_count_entry = tk.Entry(click_count_frame,width=7)
-click_count_entry.insert(0,1)
-click_count_entry.grid(row=1,column=0,pady=5)
-click_count_entry_detail = tk.Label(click_count_frame,text='Click Number')
-click_count_entry_detail.grid(row=0,column=0,padx=(22,22))
+click_counter_frame = tk.Frame(root,borderwidth=1,relief='solid')
+click_counter_frame.grid(row=4,column=0,pady=2,padx=20,sticky='w')
+click_counter_entry = tk.Entry(click_counter_frame,width=7)
+click_counter_entry.insert(0,1)
+click_counter_entry.grid(row=1,column=0,pady=5)
+click_counter_entry_detail = tk.Label(click_counter_frame,text='Click Number')
+click_counter_entry_detail.grid(row=0,column=0,padx=(22,22))
 
 start_frame = tk.Frame(root,borderwidth=1,relief='solid')
 start_frame.grid(row=5,column=0,pady=2,padx=20,sticky='w')
@@ -121,7 +121,3 @@ message.grid(row=1,column=0)
 
 pointer_position_finder()
 root.mainloop()
-
-
-
-
